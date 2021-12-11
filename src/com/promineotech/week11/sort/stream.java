@@ -13,7 +13,7 @@ public class stream {
     return camera.getCamera().stream()
         .map(camera::toString)
         .sorted()
-        .collect(Collectors.joining(","));
+        .collect(Collectors.joining("\n"));
 
   }
 }

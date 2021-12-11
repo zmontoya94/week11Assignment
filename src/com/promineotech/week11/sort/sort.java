@@ -8,9 +8,9 @@ public class sort {
   
   public void run() {
     
-    System.out.println("Method Reference:");
+    System.out.println("Method Reference:\n");
     referenceSort().forEach(camera -> System.out.println(camera.toString()));
-    System.out.println("Lambda expression:");
+    System.out.println("Lambda expression:\n");
     lambdaSort().forEach(camera -> System.out.println(camera.toString()));
     
   }

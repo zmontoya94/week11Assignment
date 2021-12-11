@@ -5,15 +5,34 @@ import java.util.List;
 
 public class camera {
   private String make;
+  private String model;
+  private int megaPixel;
   private static List<camera> cameras = new ArrayList<camera>(
-      List.of(new camera("Pentex"), 
-          new camera("Nikon"), 
-          new camera("Sony"),
-          new camera ("Kodak"),
-          new camera("Canon")));
+      List.of(new camera("Pentex", "K3",25), 
+          new camera("Nikon","D3200",13), 
+          new camera("Sony","A6000",24),
+          new camera ("Kodak","AZ421",20),
+          new camera("Canon","EOS R6",15)));
 
-  public camera(String make) {
+  public camera(String make, String model, int megaPixel) {
     this.make = make;
+    this.model = model;
+    this.megaPixel = megaPixel;
+  }
+  
+  public int getMegaPixel() {
+    return megaPixel;
+  }
+
+  public void setMegaPixel(int megaPixel) {
+    this.megaPixel = megaPixel;
+  }
+  
+  public String getModel() {
+    return model;
+  }
+  public void setModel(String model) {
+    this.model = model;
   }
   
   public String getMake() {
@@ -36,7 +55,9 @@ public class camera {
   }
 
   public String toString() {
-    return(getMake());
+    return(getMake() + " " + getModel() + ", Resolution: " + getMegaPixel() + "MP");
   }
+
+
   
 }

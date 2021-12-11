@@ -22,8 +22,8 @@ public class optionals {
       
     }
     
-    System.out.println("Optional that exists:");
-    optionCamera = Optional.of(new camera("Olympus"));
+    System.out.println("Optional with an object:");
+    optionCamera = Optional.of(new camera("Olympus","OM-D E-M10 Mark III",16));
     System.out.println(optionCams(optionCamera).toString());
   }
 
