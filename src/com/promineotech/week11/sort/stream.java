@@ -11,6 +11,7 @@ public class stream {
   public String streamToString() {
 
     return camera.getCamera().stream()
+        
         .map(camera::toString)
         .sorted()
         .collect(Collectors.joining("\n"));

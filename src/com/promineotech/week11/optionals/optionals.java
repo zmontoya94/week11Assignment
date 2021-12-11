@@ -28,6 +28,6 @@ public class optionals {
   }
 
   private camera optionCams(Optional<camera> oCamera) {
-    return oCamera.orElseThrow(() -> new NoSuchElementException("There are no camera(s) here"));
+    return oCamera.orElseThrow(() -> new NoSuchElementException("The cameras you are looking for are in another castle"));
   }
 }
