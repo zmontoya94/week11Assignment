@@ -10,7 +10,7 @@ public class sort {
     
     System.out.println("Method Reference:\n");
     referenceSort().forEach(camera -> System.out.println(camera.toString()));
-    System.out.println("Lambda expression:\n");
+    System.out.println("\nLambda expression:\n");
     lambdaSort().forEach(camera -> System.out.println(camera.toString()));
     
   }

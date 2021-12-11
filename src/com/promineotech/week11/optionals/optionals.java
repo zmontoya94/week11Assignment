@@ -8,7 +8,7 @@ import com.promineotech.week11.camera;
 public class optionals {
   public void run() {
     
-    System.out.println("Optional with no object:");
+    System.out.println("Optional with no object:\n");
     Optional<camera> optionCamera = Optional.empty();
     
     try {
@@ -16,13 +16,13 @@ public class optionals {
       System.out.println(optionCams(optionCamera).toString());
       
     }
-    catch (NoSuchElementException e) {
+    catch (NoSuchElementException error) {
       
-      System.out.println(e.getMessage());
+      System.out.println(error.getMessage());
       
     }
     
-    System.out.println("Optional with an object:");
+    System.out.println("\nOptional with an object:\n");
     optionCamera = Optional.of(new camera("Olympus","OM-D E-M10 Mark III",16));
     System.out.println(optionCams(optionCamera).toString());
   }

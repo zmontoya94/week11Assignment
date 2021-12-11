@@ -11,17 +11,13 @@ public class Application {
   } 
   
   private void run() {
-    System.out.println("Part 1, Sort Assignment:");
-    System.out.println();
+    System.out.println("Part 1, Sort Assignment:\n");
     new sort().run();
-    System.out.println();
-    System.out.println("Part 2, Stream Assignment:");
-    System.out.println();
+    System.out.println("\nPart 2, Stream Assignment:\n");
     new stream().run();
-    System.out.println();
-    System.out.println("Part 3, Optionals Assignment:");
-    System.out.println();
+    System.out.println("\nPart 3, Optionals Assignment:\n");
     new optionals().run();
+
   }
 
 }

@@ -8,11 +8,11 @@ public class camera {
   private String model;
   private int megaPixel;
   private static List<camera> cameras = new ArrayList<camera>(
-      List.of(new camera("Pentex", "K3",25), 
-          new camera("Nikon","D3200",13), 
-          new camera("Sony","A6000",24),
-          new camera ("Kodak","AZ421",20),
-          new camera("Canon","EOS R6",15)));
+      List.of(new camera("Pentex", "K70",24), 
+          new camera("Nikon","Z5",24), 
+          new camera("Sony","A7-IV",33),
+          new camera ("Kodak","AZ421",16),
+          new camera("Canon","EOS 90D",32)));
 
   public camera(String make, String model, int megaPixel) {
     this.make = make;
@@ -55,7 +55,7 @@ public class camera {
   }
 
   public String toString() {
-    return(getMake() + " " + getModel() + ", Resolution: " + getMegaPixel() + "MP");
+    return(getMake() + " " + getModel() + ", Resolution:" + getMegaPixel() + "MP");
   }
 
 
