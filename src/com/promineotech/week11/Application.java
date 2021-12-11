@@ -8,15 +8,19 @@ public class Application {
 
   public static void main(String[] args) {
     new Application().run();
-  }
-  
+  } 
   
   private void run() {
-    System.out.println("Sort Assignment:");
+    System.out.println("Part 1, Sort Assignment:");
+    System.out.println();
     new sort().run();
-    System.out.println("Stream Assignment:");
+    System.out.println();
+    System.out.println("Part 2, Stream Assignment:");
+    System.out.println();
     new stream().run();
-    System.out.println("Optionals Assignment:");
+    System.out.println();
+    System.out.println("Part 3, Optionals Assignment:");
+    System.out.println();
     new optionals().run();
   }
 

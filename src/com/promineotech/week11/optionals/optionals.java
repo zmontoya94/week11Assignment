@@ -9,21 +9,25 @@ public class optionals {
   public void run() {
     
     System.out.println("Optional with no object:");
-    Optional<camera> camOPT = Optional.empty();
+    Optional<camera> optionCamera = Optional.empty();
     
     try {
-      System.out.println(optionCams(camOPT).toString());
+      
+      System.out.println(optionCams(optionCamera).toString());
+      
     }
     catch (NoSuchElementException e) {
+      
       System.out.println(e.getMessage());
+      
     }
     
-    System.out.println("Optional with object:");
-    camOPT = Optional.of(new camera("Olympus"));
-    System.out.println(optionCams(camOPT).toString());
+    System.out.println("Optional that exists:");
+    optionCamera = Optional.of(new camera("Olympus"));
+    System.out.println(optionCams(optionCamera).toString());
   }
 
-  private camera optionCams(Optional<camera> ocam) {
-    return ocam.orElseThrow(() -> new NoSuchElementException("There are no camera(s) here"));
+  private camera optionCams(Optional<camera> oCamera) {
+    return oCamera.orElseThrow(() -> new NoSuchElementException("There are no camera(s) here"));
   }
 }
